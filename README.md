@@ -10,7 +10,7 @@ I've keep code splatter to a minimum, and this single C++ file (it can be rename
 - Every five seconds send a command (which alternates between 0x03 and 0x04) to the BMS
 - Receives notifications
 - Concatenates messages requiring more than the 20 bytes each notification provides
-- Prints out the data received in human readable form
+- If no errors, it prints out the data received in human readable form
 
 Copyright Neil Shepherd 2022
 Released under MIT license
