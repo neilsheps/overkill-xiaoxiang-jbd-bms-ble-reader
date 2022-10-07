@@ -1,6 +1,6 @@
 # xiaoxiang-jbd-bms-ble-reader
 
-This simple code reads a XiaoXiang BMS's cell voltages and summary information (overall voltage, current, SOC% and other fields) through BLE.   It works on Adafruit's nrf52 based devices.
+This simple code reads a Overkill Solar (XiaoXiang) BMS's cell voltages and summary information (overall voltage, current, SOC% and other fields) through BLE.   It works on Adafruit's nrf52 based devices.
 
 I've keep code splatter to a minimum, and this single C++ file (it can be renamed as a .ino) Does this:
 - Scans for devices 
@@ -17,10 +17,10 @@ Released under MIT license
  
 I acknowledge several other sources of information and inspiration: 
 
-https://wnsnty.xyz/entry/jbd-xiaoyang-smart-bluetooth-bms-information - a central repository of a number of links
+https://overkillsolar.com/support-downloads/ - overkill solar's respository of docs and code
+https://github.com/FurTrader/OverkillSolarBMS/blob/master/Comm_Protocol_Documentation/JBD%20Protocol%20English%20version.pdf - a detailed doc behind the protocol used to read and write data
 
-https://www.dropbox.com/s/03vfqklw97hziqr/%E9%80%9A%E7%94%A8%E5%8D%8F%E8%AE%AE%20V2%20%28%E6%94%AF%E6%8C%8130%E4%B8%B2%29%28Engrish%29.xlsx?dl=0
-^^^ a spreadsheet that references all the commands the BMS can accept, the format of commands and corresponding responses, and the checksum calculation
+https://wnsnty.xyz/entry/jbd-xiaoyang-smart-bluetooth-bms-information - a central repository of a number of links
 
 https://github.com/kolins-cz/Smart-BMS-Bluetooth-ESP32 - a version using an ESP32
 
