@@ -1,4 +1,4 @@
-# xiaoxiang-jbd-bms-ble-reader
+# overkill-xiaoxiang-jbd-bms-ble-reader
 
 This simple code reads a Overkill Solar (XiaoXiang) BMS's cell voltages and summary information (overall voltage, current, SOC% and other fields) through BLE.   It works on Adafruit's nrf52 based devices.
 
