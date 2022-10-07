@@ -2,7 +2,7 @@
 
 This simple code reads a Overkill Solar (XiaoXiang) BMS's cell voltages and summary information (overall voltage, current, SOC% and other fields) through BLE.   It works on Adafruit's nrf52 based devices.
 
-I've keep code splatter to a minimum, and this single C++ file (it can be renamed as a .ino) Does this:
+I've keep code splatter to a minimum, and this single C++ file (it can be renamed as a .ino) does this:
 - Scans for devices 
 - Finds BMSes named XiaoXiang and with the required service (0000ff00-0000-1000-8000-00805f9b34fb)
 - Initiates a connection with them
@@ -10,7 +10,7 @@ I've keep code splatter to a minimum, and this single C++ file (it can be rename
 - Every five seconds send a command (which alternates between 0x03 and 0x04) to the BMS
 - Receives notifications
 - Concatenates messages requiring more than the 20 bytes each notification provides
-- If no errors, it prints out the data received in human readable form
+- If no errors, it Serial.prints out the data received in human readable form
 
 Copyright Neil Shepherd 2022
 Released under MIT license
