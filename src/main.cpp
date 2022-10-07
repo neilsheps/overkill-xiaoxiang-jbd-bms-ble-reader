@@ -1,6 +1,6 @@
 #include <bluefruit.h>
 
-/**	Adafruit nrf52 code for communicating with XiaoXiang BMS systems through BLE.  A.k.a. JBD BMS
+/**	Adafruit nrf52 code for communicating with Overkill Solar (XiaoXiang) BMS systems through BLE.  A.k.a. JBD BMS
  * It's read only and can read 0x03 and 0x04 commands (see XiaoXiang command spreadsheet referenced below)
  * but cannot write to the BMS to change settings (probably a good thing).  
  * Copyright Neil Shepherd 2022
@@ -9,13 +9,13 @@
  * 
  * I acknowledge several other sources of information and inspiration:
  * 
+ * https://www.overkillsolar.com/projects - where I bought the device
+ * https://github.com/FurTrader/OverkillSolarBMS/blob/master/Comm_Protocol_Documentation/JBD%20Protocol%20English%20version.pdf
+ * - a doc describing the read and write commands and data responses
+ * 
  * https://wnsnty.xyz/entry/jbd-xiaoyang-smart-bluetooth-bms-information - a central repository of a number of links
  * 
- * https://www.dropbox.com/s/03vfqklw97hziqr/%E9%80%9A%E7%94%A8%E5%8D%8F%E8%AE%AE%20V2%20%28%E6%94%AF%E6%8C%8130%E4%B8%B2%29%28Engrish%29.xlsx?dl=0
- * ^^^ a spreadsheet that references all the commands the BMS can accept, the format of commands and 
- * corresponding responses, and the checksum calculation
- * 
- * https://github.com/kolins-cz/Smart-BMS-Bluetooth-ESP32 - a version using an ESP32
+ * https://github.com/kolins-cz/Smart-BMS-Bluetooth-ESP32 - code for an ESP32 talking with a BMS over BLE
  * 
  * https://learn.adafruit.com/bluefruit-nrf52-feather-learning-guide/custom-central-hrm - Adafruit's hrm example, which is similar in methodology
  */
